@@ -1,0 +1,11 @@
+{
+  "name": "billreader-api",
+  "version": "1.0.0",
+  "description": "(api back end for serving a bill reader app)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gkrugut@gmail.com",
+  "license": "ISC"
+}
