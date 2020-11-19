@@ -6,3 +6,11 @@ install:
 test_script:
   - yarn test
 build: off
+before_test:
+  - SET PGUSER=postgres
+  - SET PGPASSWORD=admin
+  - PATH=C:\Program Files\PostgreSQL\10\bin\;%PATH%
+  - createdb testdb
+  - CONNECTION_STRING=postgresql://postgres:Password12!@localhost:5432/testdb
+services:
+  - postgresql101
